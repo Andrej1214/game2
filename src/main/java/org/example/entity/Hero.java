@@ -1,7 +1,7 @@
 package org.example.entity;
 
 public abstract class Hero {
-    private String name;
+    private final String name;
 
     public int getDamage() {
         return damage;
@@ -19,7 +19,7 @@ public abstract class Hero {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
     public abstract void attackEnemy(Enemy enemy);
 }
